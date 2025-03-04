@@ -1,0 +1,164 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(106, 13, 173, 0.5)),
+        url('https://cdn.pixabay.com/photo/2018/04/09/14/33/abstract-3304213_1280.png'); /* Fondo de imagen ajustado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    color: #333; /* Color de texto oscuro para mejorar la legibilidad */
+}
+
+/* Contenedor del formulario */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Mensaje de bienvenida estilizado */
+.bienvenido {
+    background: linear-gradient(to right, #ffffff, #f0f0f0); /* Fondo más claro */
+    color: #333; /* Color de texto oscuro para mejorar la legibilidad */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #ddd; /* Bordes más claros */
+    padding: 25px;
+}
+
+.bienvenido h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.bienvenido p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+h1 {
+    color: #333; /* Color de texto más oscuro */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de etiquetas y campos de entrada */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #333; /* Color de texto oscuro para etiquetas */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background: #f8f8f8; /* Fondo más claro para los campos de entrada */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #6a0dad;
+    outline: none;
+}
+
+/* Estilos de los desplegables */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background: #f8f8f8; /* Fondo más claro */
+}
+
+select:focus {
+    border-color: #6a0dad;
+    outline: none;
+    background: #e6e6e6;
+}
+
+/* Estilos del checkbox */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Estilos de los botones */
+button {
+    background: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #8a2be2;
+}
+
+/* Estilos para mensajes de error y éxito */
+.mensajeError, .mensajeExito {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mensajeError {
+    background: #f8d7da; /* Fondo más claro */
+    color: #721c24; /* Texto más oscuro para el error */
+    border: 2px solid #f5c6cb;
+}
+
+.mensajeExito {
+    background: #d4edda; /* Fondo más claro para éxito */
+    color: #155724; /* Texto más oscuro para el éxito */
+    border: 2px solid #c3e6cb;
+}
+
+/* Responsividad */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+    }
+    .mensajeError, .mensajeExito {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
