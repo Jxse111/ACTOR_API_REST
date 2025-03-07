@@ -15,7 +15,7 @@ class APIactor {
 
         switch ($_SERVER['REQUEST_METHOD']) {
             case 'GET':
-                $codigoActor = $datos["cdactor"] ?? null;
+                $codigoActor = filter_input(INPUT_GET, "cdactor") ?? null;
                 if ($codigoActor) {
                     $actorRecogido = Actor::verActor($codigoActor);
                     if ($actorRecogido) {
